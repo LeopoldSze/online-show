@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登录</title>
+		<link rel="stylesheet" href="css/signin/signin.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/awesome/css/font-awesome.min.css" />
+		<script src="js/jquery-3.1.1.js"></script>
+	</head>
+	<body>
+		<div class="g-main">
+			<!--头部-->
+			<h3>登录</h3>			
+			<div class="f-sign">
+					<a href="javascript:"><input type="text" id="area"/><i class="fa fa-search" id="search"></i></a>
+					<div class="bars">
+						<a href="javascript:"><i class="fa fa-bars"></i></a>
+						<div class="m-menu">
+							<a href="signup.html">注册</a><br />
+							<a href="javascript:">忘记密码</a>
+						</div>
+					</div>					
+			</div>
+			
+			<!--主体-->
+			<div class="m-login">
+				<p>邮箱或用户名：</p>
+				<p><input type="text" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name@Gmail.com"/></p>
+				<p>密码：</p>
+				<p><input type="password" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;..........................."/></p>
+				<p>
+					<a href="home.html"><input type="submit" value="登录" id="login"/></a>
+					<label><input type="checkbox" /><span></span><span class="pwd">记住密码</span></label>
+					<span><a href="javascript:">忘记密码?</a></span>
+				</p>
+			</div>
+			
+			<!--底部-->
+			<div class="f-foot">
+				<h4>没有注册?<a href="signup.html">&nbsp;&nbsp;注册</a></h4>
+			</div>
+		</div>
+	</body>
+	<script>
+		$("#search").click(function(){
+			$("#area").fadeIn(500);
+			$("#area").animate({width: '200px'},200);
+		});
+		
+		$("#login").click(function(){
+			alert("登陆成功！");
+		});
+	</script>
+</html>

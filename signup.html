@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册</title>
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/signup/signup.css" />
+		<link rel="stylesheet" href="css/awesome/css/font-awesome.min.css" />
+		<script src="js/jquery-3.1.1.js"></script>
+	</head>
+	<body>
+		<div class="g-main">
+			<!--头部-->
+			<h3>注册</h3>			
+			<div class="f-sign">
+				<a href="javascript:"><i class="fa fa-user-circle-o"></i></a>	
+				<a href="javascript:"><i class="fa fa-search"></i></a>
+				<a href="javascript:"><i class="fa fa-bars"></i></a>			
+			</div>
+			
+			<!--主体-->
+			<div class="m-login">
+				<p><span>姓氏</span><span>名字</span><span>邮箱</span></p>
+				<p>
+					<input type="text" class="u-inp1" value="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cornelius"/>
+					<input type="text" value="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Crawford"/>
+					<input type="text" value="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name@Gmail.com"/>
+				</p>
+				<p><span>手机号</span><span>密码</span><span>确认密码</span></p>
+				<p>
+					<input type="text" class="u-inp1" value="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+1 858-8"/>
+					<input type="text">
+					<input type="text">
+				</p>
+				<p>					
+					<label>
+						<input type="checkbox" /><span></span>
+						<span class="pwd">我接受</span>
+					</label>
+					<span class="u-sp1"><a href="javascript:">条款</a></span>
+					<span class="u-sp2">已经注册?</span>
+					<span><a href="signin.html">登录</a></span>
+				</p>
+				<p>
+					<a href="home.html"><input type="submit" value="开始使用" id="start"/></a>
+				</p>
+			</div>
+			
+			<!--底部-->
+			<div class="f-foot">
+				<h4>其他账户登录</h4>
+				<p>
+					<span></span><a href="javascript:">FACEBOOK</a>
+					<span></span><a href="javascript:">TWITTER</a>
+					<span></span><a href="javascript:">GOOGLE+</a>
+				</p>
+			</div>
+		</div>
+	</body>
+	<script>
+		$("#start").click(function(){
+			alert("注册成功，欢迎使用！");
+		})
+	</script>
+</html>

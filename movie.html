@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>电影</title>
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/movie/movie.css" />
+		<script src="js/jquery-3.1.1.js"></script>
+	</head>
+	<body>
+		<div class="g-main">
+			<!--导航-->
+			<div class="m-nav">
+				<ul>
+					<li><a href="home.html">主页</a></li>
+					<li><a href="movie.html">电影</a></li>
+					<li><a href="cinema.html">影院</a></li>
+					<li><a href="contact.html">联系我们</a></li>
+					<li><span class="sp-img"></span></li>
+					<li>
+						<span>User</span><i class="fa fa-caret-down"></i>
+						<div class="u-menu">
+							<a href="javascript">个人中心</a><br />
+							<a href="signin.html">退出登录</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+			
+			<!--头部-->
+			<div class="m-header">
+				<div class="m-left">
+					<p>2015</p>
+					<h3>荒野猎人</h3>
+					<p>冒险、戏剧、恐怖</p>
+					<p>9.5 <span>/10</span></p>
+					<span class="u-watch"></span>
+					<span class="u-watch"></span>
+					<span class="u-watch"></span>
+					<span class="u-watch"></span>
+					<span class="u-watch"></span>
+					<span class="u-watch"></span>
+					<span class="u-watch"></span>
+					<span class="u-watch"></span>
+					<span class="u-watch"></span>
+					<span class="u-watch"></span>
+					<p><span></span><a href="">观看预告</a></p>
+				</div>
+				<div class="m-right">
+					<p>日期</p>
+					<p><a href="#">3月5日</a><span></span><a href="#">重新选择日期</a></p>
+					<p id="clock">
+						<input type="submit" value="12:30PM"/>
+						<input type="submit" value="02:30PM"/>
+						<input type="submit" value="06:30PM"/>
+						<input type="submit" value="09:30PM"/>
+						<input type="submit" value="11:30PM"/>
+						<input type="submit" value="01:30AM"/>
+					</p>
+				</div>
+				<span>18+</span>
+			</div>
+			
+			<!--主体-->
+			<div class="m-cho">
+				<div class="m-seat">
+					<h4>巨幕厅</h4>
+					<img src="imgs/movie/Screen.png" alt="" />
+					<p class="seat">1<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>1</p>
+					<p class="seat">2<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>2</p>
+					<p class="seat">3<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>3</p>
+					<p class="seat">4<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>4</p>
+					<p class="seat">5<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>5</p>
+					<p class="seat">6<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>6</p>
+					<p class="seat">7<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>7</p>
+					<p class="seat">8<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>8</p>
+					<p class="seat">9<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>9</p>
+					<p class="seat">10<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>10</p>
+					<p class="seat">11<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>11</p>
+					<p class="seat">12<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>12</p>
+					<p><span></span>可选<span></span>已售<span></span>选中</p>
+				</div>
+				
+				<div class="m-ticket">
+					<div class="m-music">
+						<audio src="Taylor swift - Sparks Fly.mp3" loop="loop" autoplay="autoplay"></audio>
+					</div>
+					<h3>已选择 <input type="text" id="nums"/> 张票</h3>
+					<div class="u-price">
+						<span><img src="imgs/movie/Image.png"></span>
+						<div class="u-info">
+							<p>电影</p>
+							<p>荒野猎人</p>
+							<p><span>影厅</span><span>座位</span><span>日期</span></p>
+							<p><span>巨幕厅</span><span id="seats"></span><span>3月5日</span></p>
+						</div>
+					</div>
+					<p class="u-jiage1"><span>合计</span><span>单价</span></p>
+					<p class="u-jiage2"><input type="text" id="totalprice"/><span>￥25</span></p>
+					<p class="u-but"><a href="home.html"><input type="submit" value="返回"/></a><a href="#"><input type="submit" value="立即购买" /></a></p>
+				</div>
+			</div>
+			
+		</div>
+	</body>
+	<script src="js/movie.js"></script>
+</html>

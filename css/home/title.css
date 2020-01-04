@@ -1,0 +1,36 @@
+.m-title{
+	width: 1200px;
+	height: 100px;
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.m-title h3{
+	margin: 50px auto;
+	width: 205px;
+	height: 65px;
+	line-height: 65px;
+	font-size: 36px;
+	color: #86573e;
+	position: relative;
+}
+.m-title h3:before,.m-title h3:after{
+	content: "";
+	width: 150px;
+	height: 5px;
+	background: #ed8743;
+	position: absolute;
+}
+.m-title h3:before{
+	top: 30px;
+	left: -140px;
+}
+.m-title h3:after{
+	top: 30px;
+	left: 195px;
+}
+.m-title p{
+	font-size: 14px;
+	color: #8d624b;
+}
